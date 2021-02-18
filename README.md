@@ -1,1 +1,1 @@
-# bequant-test
+# bq-test
