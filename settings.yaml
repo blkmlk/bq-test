@@ -1,0 +1,9 @@
+host: "0.0.0.0:8080"
+internal: 5
+url: "https://min-api.cryptocompare.com/data/pricemultifull"
+db_url: "root:root@tcp(127.0.0.1:3306)/bq?charset=utf8mb4&parseTime=True&loc=Local"
+fsyms:
+  - "BTC"
+  - "ETH"
+tsyms:
+  - "USD"
