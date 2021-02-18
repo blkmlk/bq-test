@@ -1,5 +1,5 @@
 # bq-test
 
-Test command: `make test`
+Test: `make test`
 
-Run command: `make run`
+Run: `make run`
