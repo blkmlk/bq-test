@@ -6,6 +6,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 
 	"github.com/gorilla/websocket"
@@ -69,7 +70,10 @@ func (p *publisher) init() error {
 
 	go func() {
 		fmt.Printf("Running publisher %s...\n", p.config.Host)
-		p.server.ListenAndServe()
+		err := p.server.ListenAndServe()
+		if err != nil {
+			log.Fatal(err)
+		}
 	}()
 
 	return nil
